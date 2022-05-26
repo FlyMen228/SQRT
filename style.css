@@ -4,6 +4,13 @@ body {
 	text-align: center;
 }
 
+#id {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	
+}
+
 #clock {
 	font-weight: 300px;
 	font-size: 120px;
