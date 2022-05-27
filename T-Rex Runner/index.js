@@ -769,10 +769,12 @@
             this.playSound(this.soundFx.HIT);
             vibrate(200);
 
-            /*this.stop();
+            this.stop();
             this.crashed = true;
             this.distanceMeter.acheivement = false;
+
             this.tRex.update(100, Trex.status.CRASHED);
+
             // Game over panel.
             if (!this.gameOverPanel) {
                 this.gameOverPanel = new GameOverPanel(this.canvas,
@@ -781,13 +783,15 @@
             } else {
                 this.gameOverPanel.draw();
             }
+
             // Update the high score.
             if (this.distanceRan > this.highestScore) {
                 this.highestScore = Math.ceil(this.distanceRan);
                 this.distanceMeter.setHighScore(this.highestScore);
             }
+
             // Reset the time clock.
-            this.time = getTimeStamp();*/
+            this.time = getTimeStamp();
         },
 
         stop: function () {
@@ -2702,3 +2706,6 @@
 
 function onDocumentLoad() {
     new Runner('.interstitial-wrapper');
+}
+
+document.addEventListener('DOMContentLoaded', onDocumentLoad);
